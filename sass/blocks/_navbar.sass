@@ -36,8 +36,10 @@
   color: #ffffff
   transition: 0.2s
   transform: translateY(-100%)
+  opacity: 0
   &_active
     transform: translateY(0)
+    opacity: 1
   &_nav
     display: flex
     align-items: center
@@ -75,3 +77,10 @@
     display: block
     font-style: 14px
     color: $text-color-light
+@media (max-width: 991px)
+  .navbar
+    &_mobile, &_landline
+      display: none
+@media (max-width: 576px)
+  .logo
+    display: none
