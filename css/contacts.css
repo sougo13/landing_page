@@ -1,0 +1,27 @@
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-block_item {
+  text-align: center;
+}
+
+.contacts_image {
+  margin-bottom: 25px;
+}
+
+.contacts_text {
+  font-size: 16px;
+}
+
+.contacts_link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=contacts.css.map */
