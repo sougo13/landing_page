@@ -150,7 +150,7 @@ body {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 50;
   top: 29px;
   left: 0;
   width: 100%;
@@ -159,9 +159,9 @@ body {
   color: #ffffff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 1;
 }
 
 .menu_active {
@@ -261,6 +261,11 @@ body {
   margin-bottom: 67px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.hero_link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .offer {
