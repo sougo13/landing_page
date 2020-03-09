@@ -16,6 +16,8 @@
     font-size: 21px
     margin-bottom: 48px
 .form
+  display: flex
+  flex-direction: column
   &_button
     height: 80px
     align-self: center
@@ -24,6 +26,7 @@
     margin-top: 15px
     display: flex
     align-items: flex-end
+    flex-wrap: wrap
   &_label
     display: block
     font-size: 17px
@@ -35,3 +38,19 @@
     border-right-width: 0px
     &:last-child
       border-right-width: 1px
+@media (max-width: 768px)
+  .form
+    &_group
+      flex-basis: 100%
+    &_button
+      margin-top: 30px
+      width: 50%px
+      font: small-caption
+    &_input
+      width: 50%px
+  .offer
+    &-block
+      background-size: cover
+      background-position: top left 70%
+  
+  
