@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
 
   <body>
@@ -68,7 +72,7 @@
 
     <main>
       <section id="yak1" class="offer bg-secondary">
-        <div class="container wow zoomIn">
+        <div class="container wow zoomIn" data-wow-offset="100">
           <div  class="offer_block offer-block">
             <h2 class="offer_title">Оставьте заявку на запись</h2>
             <span class="offer_subtitle">и получите скидку на первое занятие в нашем зале</span>
@@ -247,9 +251,6 @@
         });
       });
     </script>
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+    
   </body>
 </html> 
