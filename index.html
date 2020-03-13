@@ -8,6 +8,8 @@
     <title>Курсы похудения</title>
     <link rel="stylesheet" href="css/normolize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
 
   <body>
@@ -57,7 +59,9 @@
             Гарантия результата
           </h1>
           <span class="hero_subtitle">занятия от 1000 руб</span>
-          <button class="button hero_button"><a class="hero_link" href="#yak1">Записаться на занятие</a></button>
+          <button class="button hero_button wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite">
+            <a class="hero_link" href="#yak1">Записаться на занятие</a>
+          </button>
         </div>
       </div>
     </header>
@@ -71,8 +75,13 @@
             <form action="#" class="form offerm_form">
               <div class="form_row">
                 <div class="form_group">
-                  <label for="" class="form_label">Вид занятия</label>
-                  <input type="text" class="input form_input" placeholder="Вид занятия" />
+                  <label for="" class="form_label">Вид занятия</label>               
+                  <select class="input form_input" name="" id="">
+                    <option value="Пауэрлифтинг">Пауэрлифтинг</option>
+                    <option value="Фитнес">Фитнес</option>
+                    <option value="Бассейн">Бассейн</option>
+                    <option value="Тренажорный зал">Тренажорный зал</option>
+                  </select>
                 </div>
                 <div class="form_group">
                   <label for="" class="form_label">Ваше имя</label>
@@ -98,27 +107,27 @@
         <div id="uslugi" class="container">
           <h2 class="section-title section_title">Каталог услуг</h2>
           <div class="feature-block">
-            <div class="feature-block_item">
+            <div class="feature-block_item wow bounceInLeft">
               <img src="image/feature/1.png" alt="Пауэрлифтинг" class="feature-block_image">
               <p class="feature-block_text">Пауэрлифтинг</p>
             </div>
-            <div class="feature-block_item">
+            <div class="feature-block_item wow bounceInDown">
               <img src="image/feature/2.png" alt="Фитнес" class="feature-block_image">
               <p class="feature-block_text">Фитнес</p>
             </div>
-            <div class="feature-block_item">
+            <div class="feature-block_item  wow bounceInRight">
               <img src="image/feature/3.png" alt="Бассейн" class="feature-block_image">
               <p class="feature-block_text">Бассейн</p>
             </div>
-            <div class="feature-block_item">
+            <div class="feature-block_item wow bounceInLeft">
               <img src="image/feature/4.png" alt="Тренажорный зал" class="feature-block_image">
               <p class="feature-block_text">Тренажорный зал</p>
             </div>
-            <div class="feature-block_item">
+            <div class="feature-block_item wow bounceInUp">
               <img src="image/feature/5.png" alt="Спортивные секции" class="feature-block_image">
               <p class="feature-block_text">Спортивные секции</p>
             </div>
-            <div class="feature-block_item">
+            <div class="feature-block_item wow bounceInRight">
               <img src="image/feature/6.png" alt="Кардио занятия" class="feature-block_image">
               <p class="feature-block_text">Кардио занятия</p>
             </div>
@@ -137,7 +146,7 @@
               <div class="reviews-slider_text">
                 Клуб отличный во всём: атмосфера дружеская, ребята встречают всегда с улыбкой, тренеры профи своего дела, всегда помогут и подскажут, посоветуют и поддержат, а как настроение умеют поднять, так это дорогого стоит)! Халявить не получится, поэтому тренировки всегда эффективны! Идёшь всегда с большим желанием!
               </div>
-              <img src="image/reviews/kn.png" alt="" class="reviews-slider_image">
+              <img src="image/reviews/kn.png" alt="" class="reviews-slider_image wow swing center" data-wow-duration="1500ms" data-wow-delay="500ms">
               <span class="reviews-slider_name">Неизвестный Пользователь<br>Санкт-Петербург</span>
             </div>
 
@@ -145,7 +154,7 @@
               <div class="reviews-slider_text">
                 Весил 120 кг, жир свисал до колен, не знал что делать и куда обратиться. Знакомые посоветовали это место, сказали, что это мой единственный шанс. Потратил 100к рублей и 5 месяцев времени. Результата нуль, набрал еще 5 кг. Но возможно дело в том, что я почти не тренировался и ел только еду из мака.
               </div>
-              <img src="image/reviews/PetrKrug.png" alt="" class="reviews-slider_image">
+              <img src="image/reviews/PetrKrug.png" alt="" class="reviews-slider_image wow swing center" data-wow-duration="1500ms" data-wow-delay="2000ms">
               <span class="reviews-slider_name">Яковлев Петр<br>Санкт-Петербург</span>
             </div>
 
@@ -153,7 +162,7 @@
               <div class="reviews-slider_text">
                Отличный клуб, где действительно люди занимаются спортом!!! Великолепные тренеры! Наталье и Петру отдельный респект!! А занятия в гамаках-это просто волшебство!! Люблю всех!!! Вы лучшие!!!
               </div>
-              <img src="image/reviews/ya.png" alt="" class="reviews-slider_image">
+              <img src="image/reviews/ya.png" alt="" class="reviews-slider_image wow swing center" data-wow-duration="1500ms" data-wow-delay="3500ms">
               <span class="reviews-slider_name">Радостев Дмитрий<br>Санкт-Петербург</span>
             </div>
 
@@ -231,5 +240,16 @@
     </footer>
 
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=2773"></script>
+    <script>
+      $(window).load(function(){
+        $('.menu-button').on('click', function(){
+          $('.menu').toggleClass('menu_active')
+        });
+      });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html> 
